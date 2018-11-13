@@ -1,16 +1,16 @@
-aside > ul > li {
+ul li {
     background-color: #00FF00;
 }
 .submenu > li > a {
     text-decoration: none;
 }
 aside.left > h1 {
-    font-size: 1em;
+    font-size: 0.5em;
 }
-p.lorem > span[title='Lorem Ipsum'] {
+p.lorem > span {
     font-weight: bold;
 }
-span[title='Lorem Ipsum'] {
+span[title] {
     font-style: italic;
 }
 p {
