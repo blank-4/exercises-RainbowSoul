@@ -1,27 +1,21 @@
 ul li {
     background-color: #00FF00;
 }
-
 .submenu a {
     text-decoration: none;
 }
-
 aside.left > h1 {
-    font-size: .6em;
+    font-size: 0.5em;
 }
-
-p.lorem span {
+p.lorem > span {
     font-weight: bold;
 }
-
 span[title] {
     font-style: italic;
 }
-
-* p {
+p {
     text-align: justify;
 }
-
 span.title {
     text-align: center;
     color: red;
