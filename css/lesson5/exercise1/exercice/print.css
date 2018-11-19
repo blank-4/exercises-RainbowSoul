@@ -1,0 +1,15 @@
+@media print and (max-width: 200px) {
+    p {
+        color: red;
+    }
+}
+@media print and (min-width: 200px) {
+    p {
+        color: yellow;
+    }
+}
+@media print and (min-width: 600px) {
+    p {
+        color: green;
+    }
+}
