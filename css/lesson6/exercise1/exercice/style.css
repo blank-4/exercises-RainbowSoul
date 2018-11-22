@@ -51,30 +51,6 @@ section {
 #s1:target, #s2:target, #s3:target, #s4:target, #s5:target, #s6:target {
     display: flex;
 }
-#s1:target + .close {
-    display: flex;
-}
-#s1:target + .close {
-    display: flex;
-}
-#s1:target + .close {
-    display: flex;
-}
-#s1:target + .close {
-    display: flex;
-}
-#s1:target + .close {
-    display: flex;
-}
-#s1:target + .close {
-    display: flex;
-}
-#s1:target + .close {
-    display: flex;
-}
-.close {
-    display: none;
-}
 .sections > section > a {
     text-decoration: none;
     color: orange;
