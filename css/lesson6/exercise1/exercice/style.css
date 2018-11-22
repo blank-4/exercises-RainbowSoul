@@ -45,7 +45,7 @@ section {
     height: 600px;
     color: white;
 }
-#s1, #s2, #s3, #s4, #s5, #s6 {
+div > section {
     display: none;
 }
 #s1:target, #s2:target, #s3:target, #s4:target, #s5:target, #s6:target {
