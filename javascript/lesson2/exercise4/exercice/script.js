@@ -1,6 +1,6 @@
 var position = "Mairie des Lilas";
 
-switch ( position ) {
+switch (position) {
     case position = "Belleville" :
     console.log("Tu es sur la ligne 11 ou la ligne 2");
     break;
