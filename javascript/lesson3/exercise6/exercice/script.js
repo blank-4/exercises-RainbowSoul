@@ -7,4 +7,4 @@ function aireCercle(num1, num2) {
         console.log("J'en ai marre, tu sais pas rentrer des nombres");
     }
 }
-aireCercle(3, 5);
+console.log(aireCercle(3, 5));
