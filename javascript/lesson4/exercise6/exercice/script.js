@@ -1,26 +1,27 @@
-console.log('----- Message Envoyé -----');
-function chiffrer(string, caesar) {
-   var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-   var letters = string.split('');
-   for (var i = 0; i < letters.length; i++) {
-      var result = letters[i];
-      console.log(result.split(''));
-   }
-   console.log('----- Message Encodé -----');
-   for (var i = 0; i < letters.length; i++) {
-      var display = alphabet.indexOf(letters[i]) + caesar;
-      display = (display + 26) % 26;
-      console.log(alphabet[display].split('').join());
-   }
+function chiffrer(string, key) {
+    var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+    var result = "";
+    string = string.toLowerCase();
+    for (var i = 0; i < string.length; i++) {
+        // Récupération de l'index de la lettre.
+        var letter = string[i];
+        var index = alphabet.indexOf(letter);
+        // Si l'index est supérieur à -1.
+        if (index > -1) {
+            // Décalage de l'index en fonction de " key " pour avoir une nouvelle lettre.
+            index = (index + key + alphabet.length) % alphabet.length;
+            // Trouver la lettre qui est située au nouvel index.
+            var nouvelleLettre = alphabet[index]; 
+            // Ajout de la nouvelle lettre à la fin du résultat.
+            result = result + nouvelleLettre;
+        } else {
+            result = result + letter;
+        }
+    }
+    return result;
 }
-
-chiffrer("je suis vivant", 2);
-// lgbuwkubxkxcpv = je suis vivant ( décalage de 2 )
-console.log('----- Message Codé Envoyé -----');
-
-function dechiffrer(string, caesar) {
-   chiffrer(string, caesar);
+function dechiffrer(string, key) {
+    return chiffrer(string, -key);
 }
-dechiffrer("lgbuwkubxkxcpv", -2);
-
-// Ceci dit, les espaces sont remplacés par des Z
+console.log(chiffrer("Bienvenue, éè 12?!@", -5));
+console.log(dechiffrer("wdziqzipz, éè 12?!@", -5));
