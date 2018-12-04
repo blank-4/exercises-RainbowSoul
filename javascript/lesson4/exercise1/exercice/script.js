@@ -1,7 +1,7 @@
 function exercice1() {
     var inventaire = ["salade", "tomate", "oignons"];
     inventaire.push("sauce algérienne"); // Ajout d'un quatrième élément au tableau, augmentant ainsi la taille de l'inventaire de 1.
-    inventaire.pop(inventaire.lastIndexOf); // Retrait du dernier élément du tableau, réduisant ainsi la taille de l'inventaire de 1.
+    inventaire.pop(inventaire); // Retrait du dernier élément du tableau, réduisant ainsi la taille de l'inventaire de 1.
     console.log(inventaire[0]); // Premier élément du tableau.
     console.log("----------"); // Séparation.
     arrayFunct(inventaire); // Appel de la fonction arrayFunct qui va afficher le contenu du tableau de manière itérative.
