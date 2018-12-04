@@ -1,7 +1,7 @@
-function sumArray(table = ['a', 'b', 'c', 'd', 'e']) {
+function sumArray(table = [1, 10, 9, 20, 14]) {
    var sum = 0;
    for (var i = 0; i < table.length; i++) {
-      sum = (sum + 1) + i;
+      sum = sum + table[i];
    }
    return sum;
 }
