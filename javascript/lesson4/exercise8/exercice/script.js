@@ -1,5 +1,4 @@
-function sumArray(table) {
-   table = ['1', '2', '3', '4', '5'];
+function sumArray(table = ['a', 'b', 'c', 'd', 'e']) {
    var sum = 0;
    for (var i = 0; i < table.length; i++) {
       sum = (sum + 1) + i;
