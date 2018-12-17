@@ -10,8 +10,8 @@
             <ul>
                 <li v-for="(value, key) in profs">
                     {{ key }} : 
-                    <ul v-for="(value, key) in value">
-                        <li>{{ value }}</li>
+                    <ul>
+                        <li v-for="(value, key) in value">{{ value }}</li>
                     </ul>
                 </li>
             </ul>
