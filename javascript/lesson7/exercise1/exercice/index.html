@@ -9,9 +9,9 @@
         <div id="app">
             <ul>
                 <li v-for="(value, key) in profs">
-                    {{ key }} : 
+                    <p>{{ key }} :</p> 
                     <ul>
-                        <li v-for="(value, key) in value">{{ value }}</li>
+                        <li v-for="(value, key) in value"><p>{{ value }}</p></li>
                     </ul>
                 </li>
             </ul>
