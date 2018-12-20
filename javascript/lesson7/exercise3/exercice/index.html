@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Instance Vue.js</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+        <div id="app">
+            <input v-model="display" type="checkbox"/>
+            <div v-show="display">
+                <input v-model="content" type="text">
+                <button v-on:click="displayAlert">Try</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
