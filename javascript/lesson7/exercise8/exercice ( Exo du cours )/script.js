@@ -7,7 +7,11 @@ var vue = new Vue({
     },
     watch: {
         text: function(value) {
-            console.log(this.text)
+            if(this.text == "vue") {
+                alert("vue")
+            } else {
+                console.log(this.text)
+            }
         }
     }
 });
