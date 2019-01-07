@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Instance Vue.js</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+        <style>
+            .oui {
+                color: red;
+            }
+            .non {
+                color: black;
+            }
+        </style>
+        <div id="app">
+            <input v-model="status" type="checkbox"/>
+            <p :class="{ oui: status, non: !status }">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum impedit dignissimos sapiente suscipit optio natus, odio voluptatem pariatur ea corporis corrupti hic iure omnis error aperiam ipsam delectus at non.</p>
+            <p :class="statusSwitch">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum impedit dignissimos sapiente suscipit optio natus, odio voluptatem pariatur ea corporis corrupti hic iure omnis error aperiam ipsam delectus at non.</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
