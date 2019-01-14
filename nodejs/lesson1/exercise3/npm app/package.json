@@ -1,0 +1,17 @@
+{
+  "name": "testnpm",
+  "version": "1.0.0",
+  "description": "Application crée pour l'exo 3 leçon 1 de nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test-npm"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "rainbowsoul",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2"
+  }
+}
