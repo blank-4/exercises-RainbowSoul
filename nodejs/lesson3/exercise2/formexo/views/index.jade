@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action="/" method="POST")
+    label(for="lastname") Nom
+    br
+    input(id="lastname" type="text" name="lastname")
+    br
+    br
+    label(for="firstname") Prénom
+    br
+    input(id="firstname" type="text" name="firstname")
+    br
+    br
+    label(for="age") Âge
+    br
+    input(id="age" type="number" name="age")
+    br
+    br
+    label(for="email") Adresse Mail
+    br
+    input(id="email" type="mail" name="email")
+    br
+    br
+    input(type="submit")
