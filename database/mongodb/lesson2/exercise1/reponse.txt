@@ -1,0 +1,16 @@
+use lesson2
+db.exercise1
+mongoimport --db lesson2 --collection exercise1 --jsonArray --file data.json
+
+db.exercise1.find()
+db.exercise1.find({ _id: 1 })
+db.exercise1.find({ "name.first": "John" })
+db.exercise1.find({ death: { $exists: true }})
+db.exercise1.find({ death: { $exists: false }})
+db.exercise1.find({ birth: { $gt: new Date('1941-01-01') }})
+db.exercise1.find({ awards: { $exists: false }})
+db.exercise1.find({ "awards.by": "Free Software Foundation" })
+db.exercise1.updateOne({ _id: 10 }, { $set: { birth: { "date": "1959-12-18T09:00:00Z"} } })
+db.exercise1.insertOne({ _id: 11, name: { first: "Linus", last: "Torvalds" }, birth: { "$date": "1969-12-28T09:00:00Z"}, contribs: ["Linux"] })
+db.exercise1.insertOne({ _id: 12,  name: { first: "Steve", last: "Jobs"} })
+db.exercise1.remove({ name: { first: "Steve", last: "Jobs"} })
