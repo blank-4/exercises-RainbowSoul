@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  form(action="/" method="POST")
+    label(for="username") Nom d'Utilisateur
+    br
+    br
+    input(id="username" name="username" type="text")
+    br
+    br
+    label(for="firstname") Prénom
+    br
+    br
+    input(id="firstname" name="firstname" type="text")
+    br
+    br
+    label(for="lastname") Nom
+    br
+    br
+    input(id="lastname" name="lastname" type="text")
+    br
+    br
+    label(for="email") Adresse Mail
+    br
+    br
+    input(id="email" name="email" type="email")
+    br
+    br
+    label(for="password") Mot de Passe
+    br
+    br
+    input(id="password" name="password" type="password")
+    br
+    br
+    label(for="passwordvalid") Mot de Passe ( Confirmation )
+    br
+    br
+    input(id="passwordvalid" name="passwordvalid" type="password")
+    br
+    br
+    input(type="submit" value="Envoyer")
+  p(class="errormsg") #{errormsg}
